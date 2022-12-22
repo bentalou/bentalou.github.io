@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    /* changes background of body color to white */
+    background-color: #1F2022;
+  }
+  nav{
+    height:80px;
+    width:100%;
+    background-color:#222831;
+    opacity:0.95 ;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    
+    /* changes background color of nav to white */
+  }
+  
+  .nav ul {
+    /* space from the left to add image */
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+
+  .section {
+    margin: 0 25px;
+  }
+ .nav ul li {
+    /* removed bullets from next to unordered list */
+    list-style: none;
+    /* words float left without space */
+    /* next to each other */
+    display: inline-block;
+    /* centers the links and list to the middle of nav bar */
+    line-height: 80px;
+    font-family: "Inter";
+  }
+
+  .nav ul li a {
+    /* Removed underline from text*/
+    text-decoration: none;
+    /* color of text is black */
+    color: gray;
+    /* gives space above and below link that are click able */ 
+    display: block;
+    /* 0px from top and bottom and 20px from left and right of words */
+    /* changed the font size to 16 px */
+    font-size: 14px;
+    /* set the font to arial */
+    font-family: "Inter";
+    
+  }
+ 
+  /* color while hovering over text */
+  ul .section a:hover {
+    color: white;
+  }
+  
+  .social {
+    float:right;
+    margin: 0 13px;
+  }
+
+  ul .social a:hover {
+    fill: #F3EFE0;
+    color: #F3EFE0
+  }
+
+  .nav .email a{
+    font-size: 20px;
+    position: relative;
+    bottom: 2px;
+  }
+
+  .nav .instagram a{
+    fill: gray;
+    position: relative;
+    top: 7px;
+  }
+
+  .nav .linkedin a{
+    fill: gray;
+    position: relative;
+    top: 7px;
+  }
+  .section img {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .hero {
+    display: flex;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 100px;
+    align-items: center;
+    position: relative;
+    top: 60px;
+  }
+  
+  .box1{
+    flex:4;
+    font-family: "Inter";
+    min-width: 600px;
+  }
+
+  .hero .welcome {
+    color: #C4C4C4;
+    font-size: 16px;
+    word-spacing: 2px;
+  }
+
+  .hero .sentence{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    line-height: 32pt;
+  }
+
+  .hero a{
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color:lightblue;
+  }
+  
+  .hero a:hover{
+    text-decoration: underline;
+  }
+
+  .box2 {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .box2 img {
+    height: 600px;
+    width: auto;
+  }
+
+.journey{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.journey p{
+  font-size: 25px;
+  color: white;
+  font-family: "Inter";
+  word-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.journey img{
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.journey span {
+  font-size: 16px;
+  color: #C4C4C4;
+  font-family: "Inter";
+  word-spacing: 9px;
+  margin: 40px 0;
+}
+
+.pics {
+  font-size: 25px;
+  color: white;
+  font-family: "Inter";
+  word-spacing: 2px;
+  margin-left: 300px;
+  margin-right: 300px;
+  position: relative;
+  top: 75px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+}
+
+.slider {
+  position: relative;
+  background: black;
+  min-width: 850px;
+  height: 600px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.slider .slide.active{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: 2s;
+
+}
+
+.slider .slide img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .slide .info{
+  position: absolute;
+  color: #222;
+  background: rgba(255, 255, 255, 0.85);
+  width: 30%;
+  margin-top: 30px;
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+}
+
+.slider .slide .info h2{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.slider .slide .info p{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.navigation{
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slider:hover .navigation{
+  opacity: 1;
+}
+
+.prev-btn, .next-btn{
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn{
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.next-btn{
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.navigation-visibility{
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-visibility .slide-icon{
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.5);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  transform: translateY(-40px);
+  margin: 0 6px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+}
+
+.navigation-visibility .slide-icon.active{
+  background: gray;
+}
+
+@media (max-width: 900px){
+  .slider{
+      width: 100%;
+  }
+
+  .slider .slide .info{
+      position: relative;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+@media (max-width: 500px){
+  .slider .slide .info h2{
+    font-size: 1.8em;
+    line-height: 40px;  
+  }
+
+  .slider .slide .info p{
+      font-size: 0.9em;
+  }
+}
+
+footer div {
+  margin-top: 10px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+footer img{
+  height: 50px;
+  width: auto;
+  border-radius: 100%;
+}
+
+footer h2{
+  font-size: 25px;
+  color: white;
+  font-family: "Inter";
+  word-spacing: 2px;
+  margin: 20px 0;
+}
+
+footer p{
+  font-size: 16px;
+  color: #C4C4C4;
+  font-family: "Inter";
+  word-spacing: 2px;
+  margin: 10px 0;
+}
+
+footer a{
+  font-size: 16px;
+  font-family: "Inter";
+  color: lightblue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
